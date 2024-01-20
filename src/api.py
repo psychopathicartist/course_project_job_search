@@ -32,7 +32,8 @@ class HeadHunterAPI(API):
             'per_page': 20,
             'text': f'{vacancy_name}',
             'search_field': 'name',
-            'only_with_salary': True
+            'only_with_salary': True,
+            'area': 113
         }
 
         response = requests.get(hh_api_url, params=params).json()
@@ -51,8 +52,10 @@ class HeadHunterAPI(API):
             vacancy_main_info = {
                 'name': vacancy_info['name'],
                 'url': vacancy_info['alternate_url'],
-                'salary_from': vacancy_info['salary']['from'],
-                'salary_to': None if vacancy_info['salary']['to'] == 'null' else vacancy_info['salary']['to'],
+                'salary_from': int(vacancy_info['salary']['to'] / 2) if vacancy_info['salary']['from'] is None
+                else vacancy_info['salary']['from'],
+                'salary_to': vacancy_info['salary']['from'] if vacancy_info['salary']['to'] is None
+                else vacancy_info['salary']['to'],
                 'schedule': vacancy_info['schedule']['name'],
                 'town': vacancy_info['area']['name']
             }
@@ -99,7 +102,8 @@ class SuperJobAPI(API):
                 'name': vacancy_info['profession'],
                 'url': vacancy_info['link'],
                 'salary_from': vacancy_info['payment_from'],
-                'salary_to': vacancy_info['payment_to'],
+                'salary_to': vacancy_info['payment_from'] if vacancy_info['payment_to'] == 0
+                else vacancy_info['payment_to'],
                 'schedule': vacancy_info['type_of_work']['title'],
                 'town': vacancy_info['town']['title']
             }
