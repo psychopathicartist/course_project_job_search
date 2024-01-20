@@ -4,31 +4,47 @@ from abc import ABC, abstractmethod
 
 
 class API(ABC):
+    """
+    Абстрактный класс для работы с API сайтов с вакансиями
+    """
 
     @abstractmethod
-    def get_vacancies(self, vacancy_name: str):
+    def get_vacancies(self, vacancy_name: str) -> list:
         pass
 
     @abstractmethod
-    def get_main_information(self,vacancy_name: str):
+    def get_main_information(self, vacancy_name: str) -> list:
         pass
 
 
 class HeadHunterAPI(API):
+    """
+    Класс для работы с API сайта hh.ru
+    """
 
     def get_vacancies(self, vacancy_name: str) -> list:
+        """
+        Возвращает список из 20 вакансий, полученных по названию из запроса по API
+        """
+
         hh_api_url = 'https://api.hh.ru/vacancies'
-        payload = {
+        params = {
             'per_page': 20,
             'text': f'{vacancy_name}',
             'search_field': 'name',
             'only_with_salary': True
         }
 
-        response = requests.get(hh_api_url, params=payload).json()
+        response = requests.get(hh_api_url, params=params).json()
         return response['items']
 
-    def get_main_information(self, vacancy_name: str):
+    def get_main_information(self, vacancy_name: str) -> list:
+        """
+        Возвращает список вакансий, полученных в методе get_vacancies,
+        в котором содержатся лишь указанные поля:
+        название, ссылка, зарплата от, зарплата до, рабочий график, город
+        """
+
         vacancies_main_info = []
         vacancies_info = self.get_vacancies(vacancy_name)
         for vacancy_info in vacancies_info:
@@ -45,23 +61,37 @@ class HeadHunterAPI(API):
 
 
 class SuperJobAPI(API):
+    """
+    Класс для работы с API сайта superjob.ru
+    """
 
     secret_key = os.getenv('SJ_SECRET_KEY')
 
     def get_vacancies(self, vacancy_name: str) -> list:
+        """
+        Возвращает список из 20 вакансий, полученных по названию из запроса по API
+        """
+
         sj_api_url = 'https://api.superjob.ru/2.0/vacancies/'
         headers = {
             'X-Api-App-Id': self.secret_key
         }
-        payload = {
-            'keywords': [[1], [], [f'{vacancy_name}']],
+        params = {
+            'keyword': f'{vacancy_name}',
+            'catalogues': 48,
             'no_agreement': 1
         }
 
-        response = requests.get(sj_api_url, headers=headers, params=payload).json()
+        response = requests.get(sj_api_url, headers=headers, params=params).json()
         return response['objects']
 
-    def get_main_information(self, vacancy_name: str):
+    def get_main_information(self, vacancy_name: str) -> list:
+        """
+        Возвращает список вакансий, полученных в методе get_vacancies,
+        в котором содержатся лишь указанные поля:
+        название, ссылка, зарплата от, зарплата до, рабочий график, город
+        """
+
         vacancies_main_info = []
         vacancies_info = self.get_vacancies(vacancy_name)
         for vacancy_info in vacancies_info:
