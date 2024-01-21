@@ -111,24 +111,28 @@ class JSONSaver(Saver):
 
     def get_vacancies_by_salary(self, min_salary: int) -> list:
         """
-        Возвращает список вакансий, в которых зарплата больше или равна переданной
+        Возвращает список экземпляров вакансий, в которых зарплата больше или равна переданной
         """
 
         vacancies_by_salary = []
         vacancies_from_file = self.open_vacancies()
         for vacancy_from_file in vacancies_from_file:
             if vacancy_from_file['salary_from'] >= min_salary:
-                vacancies_by_salary.append(vacancy_from_file)
+                vacancies_by_salary.append(Vacancy(vacancy_from_file['name'], vacancy_from_file['url'],
+                                                   vacancy_from_file['salary_from'], vacancy_from_file['salary_to'],
+                                                   vacancy_from_file['schedule'], vacancy_from_file['town']))
         return vacancies_by_salary
 
     def get_vacancies_by_town(self, town: str) -> list:
         """
-        Возвращает список вакансий, в которых название города совпадает с переданным
+        Возвращает список экземпляров вакансий, в которых название города совпадает с переданным
         """
 
         vacancies_by_town = []
         vacancies_from_file = self.open_vacancies()
         for vacancy_from_file in vacancies_from_file:
             if vacancy_from_file['town'] == town.title():
-                vacancies_by_town.append(vacancy_from_file)
+                vacancies_by_town.append(Vacancy(vacancy_from_file['name'], vacancy_from_file['url'],
+                                                 vacancy_from_file['salary_from'], vacancy_from_file['salary_to'],
+                                                 vacancy_from_file['schedule'], vacancy_from_file['town']))
         return vacancies_by_town
