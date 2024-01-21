@@ -26,3 +26,27 @@ class Vacancy:
         Возвращает результат сравнения минимальной зарплаты двух экземпляров класса
         """
         return self.__salary_from < other.__salary_from
+
+    @property
+    def name(self):
+        return self.__name
+
+    @property
+    def url(self):
+        return self.__url
+
+    @property
+    def salary_from(self):
+        return self.__salary_from
+
+    @property
+    def salary_to(self):
+        return self.__salary_to
+
+    @property
+    def town(self):
+        return self.__town
+
+    @property
+    def schedule(self):
+        return self.__schedule
