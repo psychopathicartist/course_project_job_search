@@ -19,13 +19,14 @@ class Vacancy:
         """
         Возвращает информацию об экземпляре класса вакансии для пользователя
         """
-        return f'Вакансия на должность {self.__name}\nЗарплата от {self.__salary_from} до {self.__salary_to} рублей'
+        return (f'Вакансия на должность {self.name}\nЗарплата от {self.salary_from} до {self.salary_to} рублей\n'
+                f'{self.schedule}, город {self.town}\nСсылка на вакансию {self.url}')
 
     def __lt__(self, other) -> bool:
         """
         Возвращает результат сравнения минимальной зарплаты двух экземпляров класса
         """
-        return self.__salary_from < other.__salary_from
+        return self.salary_from < other.salary_from
 
     @property
     def name(self):
