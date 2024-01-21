@@ -1,0 +1,266 @@
+[
+    {
+        "name": "Python разработчик (Django)",
+        "url": "https://hh.ru/vacancy/91636601",
+        "salary_from": 60000,
+        "salary_to": 100000,
+        "schedule": "Полный день",
+        "town": "Санкт-Петербург"
+    },
+    {
+        "name": "Junior Python разработчик",
+        "url": "https://hh.ru/vacancy/91861865",
+        "salary_from": 60000,
+        "salary_to": 60000,
+        "schedule": "Полный день",
+        "town": "Санкт-Петербург"
+    },
+    {
+        "name": "Python (Django) Разработчик",
+        "url": "https://hh.ru/vacancy/91237789",
+        "salary_from": 100000,
+        "salary_to": 250000,
+        "schedule": "Полный день",
+        "town": "Москва"
+    },
+    {
+        "name": "Python developer (junior+)",
+        "url": "https://hh.ru/vacancy/91580173",
+        "salary_from": 100000,
+        "salary_to": 150000,
+        "schedule": "Полный день",
+        "town": "Москва"
+    },
+    {
+        "name": "Python developer (junior+)",
+        "url": "https://hh.ru/vacancy/91580174",
+        "salary_from": 100000,
+        "salary_to": 150000,
+        "schedule": "Полный день",
+        "town": "Санкт-Петербург"
+    },
+    {
+        "name": "Программист Python (Junior)",
+        "url": "https://hh.ru/vacancy/91343218",
+        "salary_from": 60000,
+        "salary_to": 80000,
+        "schedule": "Полный день",
+        "town": "Уфа"
+    },
+    {
+        "name": "Backend-разработчик Python",
+        "url": "https://hh.ru/vacancy/91620172",
+        "salary_from": 80000,
+        "salary_to": 160000,
+        "schedule": "Полный день",
+        "town": "Москва"
+    },
+    {
+        "name": "Стажер-программист Python",
+        "url": "https://hh.ru/vacancy/91938116",
+        "salary_from": 40000,
+        "salary_to": 40000,
+        "schedule": "Полный день",
+        "town": "Электросталь"
+    },
+    {
+        "name": "Специалист по машинному обучению (python)",
+        "url": "https://hh.ru/vacancy/91774863",
+        "salary_from": 60000,
+        "salary_to": 60000,
+        "schedule": "Полный день",
+        "town": "Москва"
+    },
+    {
+        "name": "Программист Python (удаленно)",
+        "url": "https://hh.ru/vacancy/91021945",
+        "salary_from": 75000,
+        "salary_to": 75000,
+        "schedule": "Полный день",
+        "town": "Владивосток"
+    },
+    {
+        "name": "Python-разработчик (Инженер-программист)",
+        "url": "https://hh.ru/vacancy/91683615",
+        "salary_from": 90000,
+        "salary_to": 90000,
+        "schedule": "Полный день",
+        "town": "Москва"
+    },
+    {
+        "name": "Python разработчик",
+        "url": "https://hh.ru/vacancy/91822058",
+        "salary_from": 180000,
+        "salary_to": 280000,
+        "schedule": "Удаленная работа",
+        "town": "Москва"
+    },
+    {
+        "name": "Junior Программист/Разработчик Python",
+        "url": "https://hh.ru/vacancy/91764768",
+        "salary_from": 60000,
+        "salary_to": 60000,
+        "schedule": "Полный день",
+        "town": "Новосибирск"
+    },
+    {
+        "name": "Инженер-программист (Python)",
+        "url": "https://hh.ru/vacancy/91679086",
+        "salary_from": 40000,
+        "salary_to": 40000,
+        "schedule": "Полный день",
+        "town": "Архангельск"
+    },
+    {
+        "name": "Python Junior/Middle",
+        "url": "https://hh.ru/vacancy/91026652",
+        "salary_from": 125000,
+        "salary_to": 250000,
+        "schedule": "Удаленная работа",
+        "town": "Москва"
+    },
+    {
+        "name": "Стажер-разработчик Python/Java/Kotlin (компьютерное зрение), удалённо",
+        "url": "https://hh.ru/vacancy/89166853",
+        "salary_from": 15000,
+        "salary_to": 15000,
+        "schedule": "Удаленная работа",
+        "town": "Санкт-Петербург"
+    },
+    {
+        "name": "Pre-middle Python Developer",
+        "url": "https://hh.ru/vacancy/91791668",
+        "salary_from": 75000,
+        "salary_to": 100000,
+        "schedule": "Удаленная работа",
+        "town": "Оренбург"
+    },
+    {
+        "name": "Python разработчик (Middle)",
+        "url": "https://hh.ru/vacancy/91956061",
+        "salary_from": 80000,
+        "salary_to": 120000,
+        "schedule": "Полный день",
+        "town": "Москва"
+    },
+    {
+        "name": "Pre-middle Python Developer",
+        "url": "https://hh.ru/vacancy/91793344",
+        "salary_from": 75000,
+        "salary_to": 100000,
+        "schedule": "Удаленная работа",
+        "town": "Москва"
+    },
+    {
+        "name": "Программист Python django",
+        "url": "https://hh.ru/vacancy/91937424",
+        "salary_from": 140000,
+        "salary_to": 200000,
+        "schedule": "Удаленная работа",
+        "town": "Москва"
+    },
+    {
+        "name": "Преподаватель программирования, веб-разработки",
+        "url": "https://volgograd.superjob.ru/vakansii/prepodavatel-programmirovaniya-38561557.html",
+        "salary_from": 40000,
+        "salary_to": 40000,
+        "schedule": "Полный рабочий день",
+        "town": "Волгоград"
+    },
+    {
+        "name": "Инженер-программист",
+        "url": "https://astrakhan.superjob.ru/vakansii/inzhener-programmist-43503556.html",
+        "salary_from": 39826,
+        "salary_to": 39826,
+        "schedule": "Полный рабочий день",
+        "town": "Астрахань"
+    },
+    {
+        "name": "Программист",
+        "url": "https://kolomna.superjob.ru/vakansii/programmist-45594068.html",
+        "salary_from": 60000,
+        "salary_to": 60000,
+        "schedule": "Полный рабочий день",
+        "town": "Коломна"
+    },
+    {
+        "name": "Инженер-программист",
+        "url": "https://volzhskiy.superjob.ru/vakansii/inzhener-programmist-47078636.html",
+        "salary_from": 50000,
+        "salary_to": 50000,
+        "schedule": "Полный рабочий день",
+        "town": "Волжский"
+    },
+    {
+        "name": "Преподаватель программирования",
+        "url": "https://odintsovo.superjob.ru/vakansii/prepodavatel-programmirovaniya-48067279.html",
+        "salary_from": 65000,
+        "salary_to": 95000,
+        "schedule": "Полный рабочий день",
+        "town": "Одинцово"
+    },
+    {
+        "name": "Программист, разработчик python",
+        "url": "https://www.superjob.ru/vakansii/programmist-47616359.html",
+        "salary_from": 100000,
+        "salary_to": 100000,
+        "schedule": "Полный рабочий день",
+        "town": "Москва"
+    },
+    {
+        "name": "Python-разработчик (middle) / backend developer",
+        "url": "https://tula.superjob.ru/vakansii/python-razrabotchik-48446482.html",
+        "salary_from": 80000,
+        "salary_to": 130000,
+        "schedule": "Полный рабочий день",
+        "town": "Тула"
+    },
+    {
+        "name": "DataScientist (middle)",
+        "url": "https://tula.superjob.ru/vakansii/datascientist-48505136.html",
+        "salary_from": 80000,
+        "salary_to": 150000,
+        "schedule": "Полный рабочий день",
+        "town": "Тула"
+    },
+    {
+        "name": "Преподаватель программирования",
+        "url": "https://www.superjob.ru/vakansii/prepodavatel-programmirovaniya-48067280.html",
+        "salary_from": 65000,
+        "salary_to": 95000,
+        "schedule": "Полный рабочий день",
+        "town": "Москва"
+    },
+    {
+        "name": "Web-разработчик (backend)",
+        "url": "https://spb.superjob.ru/vakansii/web-razrabotchik-41964533.html",
+        "salary_from": 100000,
+        "salary_to": 100000,
+        "schedule": "Полный рабочий день",
+        "town": "Санкт-Петербург"
+    },
+    {
+        "name": "Программист Linux",
+        "url": "https://www.superjob.ru/vakansii/programmist-linux-45695529.html",
+        "salary_from": 100000,
+        "salary_to": 500000,
+        "schedule": "Полный рабочий день",
+        "town": "Москва"
+    },
+    {
+        "name": "Инженер (трансфер технологий)",
+        "url": "https://www.superjob.ru/vakansii/inzhener-47454519.html",
+        "salary_from": 60000,
+        "salary_to": 100000,
+        "schedule": "Полный рабочий день",
+        "town": "Москва"
+    },
+    {
+        "name": "Веб-программист (РНР, Битрикс)",
+        "url": "https://nn.superjob.ru/vakansii/veb-programmist-47983828.html",
+        "salary_from": 60000,
+        "salary_to": 130000,
+        "schedule": "Полный рабочий день",
+        "town": "Нижний Новгород"
+    }
+]
