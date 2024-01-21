@@ -48,12 +48,12 @@ class JSONSaver(Saver):
         Возвращает словарь из экземпляра класса вакансии
         """
         vacancy_dict = {
-            'name': vacancy.__name,
-            'url': vacancy.__url,
-            'salary_from': vacancy.__salary_from,
-            'salary_to': vacancy.__salary_to,
-            'schedule': vacancy.__schedule,
-            'town': vacancy.__town
+            'name': vacancy.name,
+            'url': vacancy.url,
+            'salary_from': vacancy.salary_from,
+            'salary_to': vacancy.salary_to,
+            'schedule': vacancy.schedule,
+            'town': vacancy.town
         }
         return vacancy_dict
 
